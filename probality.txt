@@ -1,0 +1,124 @@
+Probability is the branch of mathematics that deals with the study of random events or occurrences. It provides a way to quantify the likelihood or chance of an event happening, ranging from impossible (probability of 0) to certain (probability of 1).
+
+The origins of probability can be traced back to the 17th century, where mathematicians such as Blaise Pascal and Pierre de Fermat formulated the theory of probability as a means to solve problems related to gambling. However, it was only in the 18th century that probability became a recognized mathematical discipline, with the work of mathematicians such as Jacob Bernoulli, Thomas Bayes, and Laplace.
+
+Today, probability has numerous applications in various fields such as statistics, physics, economics, engineering, and computer science. Some examples of its applications are:
+
+Risk assessment and insurance: Probability is used to estimate the likelihood of an event occurring, such as a car accident or a natural disaster, and to determine the appropriate insurance premiums.
+
+Stock market analysis: Probability is used to model the fluctuations of the stock market and to estimate the probability of a certain stock price movement.
+
+Medical research: Probability is used to design clinical trials and to analyze the results, in order to determine the efficacy of new drugs or treatments.
+
+Weather forecasting: Probability is used to model the behavior of weather patterns and to predict the likelihood of certain weather events, such as hurricanes or tornadoes.
+
+Conditional probability is the probability of an event occurring given that another event has already occurred. In other words, it is the probability of an event A occurring, given that another event B has already occurred. This can be written as P(A|B), where P denotes probability.
+
+For example, consider rolling two dice. The probability of rolling a 6 on one die is 1/6. However, if we already know that one of the dice has rolled a 6, the probability of the other die also rolling a 6 is 1/6. This is an example of conditional probability, where the probability of rolling a 6 on the second die is dependent on the outcome of the first die roll.
+
+
+
+
+48680@students.riphah.edu.pk
+Riphah College of Science & Technology, there are five students Ali, Ibrahim,
+Usman, Laiba and Tehreem respectively in semester 5th Department of Computer Science
+having 7 subjects each students getting grades which are given below
+Subject1 Subject2 Subject3 Subject4 Subject5 Subject6 Subject7
+Ali A A B C A A+ D
+Ibrahim B A+ B D B A B
+Usman A C B A+ A A D
+Laiba C A+ B D B A B
+Tehreem D B A A A A+ C
+How many different ways? Use a tree diagram to check your result
+To find the total number of ways in which the students can receive grades, we need to calculate the number of possible combinations of grades across all seven subjects for each student. Each subject has a certain number of possible grades, so the total number of possible combinations can be found by multiplying the number of grades for each subject together.
+
+For example, if a subject has four possible grades (A, B, C, and D), then there are four possible outcomes for that subject. Multiplying the number of possible outcomes for all seven subjects together gives us the total number of possible combinations of grades for each student.
+
+Using the grades given in the question, we can calculate the total number of possible combinations of grades for each student as follows:
+
+Ali: 4 x 4 x 4 x 4 x 4 x 5 x 4 = 5120
+Ibrahim: 4 x 5 x 4 x 4 x 4 x 4 x 4 = 5120
+Usman: 4 x 4 x 4 x 5 x 4 x 4 x 4 = 5120
+Laiba: 4 x 5 x 4 x 4 x 4 x 4 x 4 = 5120
+Tehreem: 5 x 4 x 4 x 4 x 4 x 4 x 4 = 5120
+
+Therefore, there are a total of 5 x 5120 = 25600 possible ways in which the five students can receive grades.
+
+A tree diagram can be used to check this result. The tree diagram would have seven levels, one for each subject, with four or five branches at each level representing the possible grades for that subject. The number of possible outcomes for each student can then be found by multiplying the number of branches at each level together. The total number of possible outcomes can be found by adding up the number of possible outcomes for each student. This would give us the same result as calculated above, i.e., 25600.
+
+
+
+
+48680@students.riphah.edu.pk
+use tree diagram to solve this question
+Here is the tree diagram to represent the possible grades for each student:
+
+css
+Copy code
+                      Ali
+           /     /     |    \    \     \     \
+          A     B      C     D     A+    B     D
+         / \    / \    / \   / \    / \   / \   / \
+        A   B  A   B  B   A A   D  A   A+ A   D A   D
+       / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \
+      B  C D A  C D B  C D A  C D A  C D A+ C D A  C D
+      |  | | |  | | | | | | | | | | | | | | | | | | |
+    Ibrahim Laiba Tehreem Usman
+Each level of the tree represents a different subject, and each branch represents a possible grade for that subject. To find the total number of possible outcomes for each student, we simply multiply the number of branches at each level together. For example, for Ali:
+
+4 possible grades for Subject 1 x 4 possible grades for Subject 2 x 4 possible grades for Subject 3 x 4 possible grades for Subject 4 x 5 possible grades for Subject 5 x 4 possible grades for Subject 6 x 1 possible grade for Subject 7 = 5120 possible outcomes.
+
+We can do the same for each of the other students and add up the results to get the total number of possible outcomes for all five students.
+
+
+
+
+48680@students.riphah.edu.pk
+Three cards are drawn from an ordinary deck and not replaced. Find the probability
+of these events
+a) Getting three jacks
+b) Getting an ace, king and queen in order
+c) Getting a club, a spade and a heart in order
+a) To get three jacks, we need to draw all three jacks from the deck. There are four jacks in a deck of 52 cards, so the probability of drawing a jack on the first draw is 4/52. Once the first jack is drawn, there are only three jacks left in the deck of 51 cards, so the probability of drawing a jack on the second draw is 3/51. Similarly, the probability of drawing a jack on the third draw is 2/50. Therefore, the probability of getting three jacks in a row is:
+
+P(Three Jacks) = (4/52) * (3/51) * (2/50) = 1/5525
+
+b) To get an ace, king, and queen in order, there is only one possible combination: ace of hearts, king of hearts, and queen of hearts. The probability of getting an ace of hearts on the first draw is 1/52. Once the ace of hearts is drawn, there are only 51 cards left in the deck, and only one of them is the king of hearts, so the probability of drawing the king of hearts on the second draw is 1/51. Similarly, the probability of drawing the queen of hearts on the third draw is 1/50. Therefore, the probability of getting an ace, king, and queen in order is:
+
+P(Ace, King, Queen in Order) = (1/52) * (1/51) * (1/50) = 1/132600
+
+c) To get a club, a spade, and a heart in order, there are six possible combinations: club-spade-heart, club-heart-spade, spade-club-heart, spade-heart-club, heart-club-spade, and heart-spade-club. We will calculate the probability of getting the first combination, and then multiply by 6 to get the total probability. The probability of drawing a club on the first draw is 13/52. Once the club is drawn, there are 12 cards left in the deck that are either a spade or a heart, so the probability of drawing a spade on the second draw is 13/51. Once the spade is drawn, there are 11 cards left in the deck that are either a club or a heart, so the probability of drawing a heart on the third draw is 13/50. Therefore, the probability of getting a club, a spade, and a heart in order is:
+
+P(Club, Spade, Heart in Order) = (13/52) * (13/51) * (13/50) = 2197/132600
+
+Multiplying by 6, we get:
+
+P(Club, Spade, Heart in Order) = 6 * (2197/132600) = 2197/22100
+
+
+
+
+48680@students.riphah.edu.pk
+A farmer has a box containing 30 eggs, 5 of which have blood spots. He checks
+eggs by taking them at random one after another from the box. What is the probability that the
+first two eggs have spots and the third will be clear.
+The probability of selecting a blood-spotted egg from the box is 5/30 = 1/6.
+
+To find the probability that the first two eggs have spots and the third will be clear, we need to multiply the probabilities of each event.
+
+So, the probability that the first egg has a spot is 1/6, and since the egg is not replaced, the probability that the second egg also has a spot is 4/29 (there are now 29 eggs left in the box, but only 4 blood-spotted eggs). Finally, the probability that the third egg does not have a spot is 25/28 (there are now 28 eggs left in the box, and 25 of them are clear).
+
+Therefore, the probability of selecting two blood-spotted eggs followed by one clear egg is:
+
+P = (1/6) * (4/29) * (25/28)
+
+Simplifying this expression, we get:
+
+P = 25/1212
+
+So, the probability that the first two eggs have spots and the third will be clear is 25/1212.
+
+
+
+
+Regenerate response

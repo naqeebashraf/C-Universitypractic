@@ -1,0 +1,6 @@
+  ifstream p("n.txt");
+    string a;
+    while(getline(p,a))
+    {
+        cout<<a<<endl;
+    }
